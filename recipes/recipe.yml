@@ -16,5 +16,11 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: dnf
+    install:
+      packages:
+        - https://repo.protonvpn.com/fedora-%OS_VERSION%-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.3-1.noarch.rpm
+        - proton-vpn-gnome-desktop
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

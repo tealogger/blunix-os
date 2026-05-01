@@ -24,13 +24,12 @@ modules:
         - https://repo.librewolf.net/librewolf.repo
       copr:
         - hhd-dev/hhd
+        - lukenukem/asus-linux
     install:
       packages:
         - librewolf
         - https://repo.protonvpn.com/fedora-%OS_VERSION%-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.3-1.noarch.rpm
-        - hhd
-        - adjustor
-        - hhd-ui
+        - asusctl
   - type: fonts
     fonts:
       nerd-fonts:

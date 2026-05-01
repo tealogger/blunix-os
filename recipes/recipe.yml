@@ -22,9 +22,14 @@ modules:
       cleanup: true
       files:
         - https://repo.librewolf.net/librewolf.repo
+      copr:
+        - hhd-dev/hhd
     install:
       packages:
         - librewolf
-  
+        - https://repo.protonvpn.com/fedora-%OS_VERSION%-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.3-1.noarch.rpm
+        - hhd
+        - adjustor
+        - hhd-ui
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
